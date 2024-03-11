@@ -1,5 +1,5 @@
 resource "aws_iam_role" "capstone-github-actions" {
-  name = "GitHub-Actions-Terraform-Role"
+  name = "Capstone-GitHub-Actions-Terraform-Role"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -16,7 +16,7 @@ resource "aws_iam_role" "capstone-github-actions" {
 }
 
 resource "aws_iam_role_policy" "capstone-github-actions-policy" {
-  name = "GitHub-Actions-Policy"
+  name = "Capstone-GitHub-Actions-Policy"
   role = aws_iam_role.capstone-github-actions.id
 
   policy = jsonencode({
