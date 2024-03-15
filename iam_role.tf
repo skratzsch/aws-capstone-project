@@ -1,4 +1,4 @@
-resource "aws_iam_role" "capstone-github-actions" {
+/* resource "aws_iam_role" "capstone-github-actions" {
   name = "Capstone-GitHub-Actions-Terraform-Role"
 
   assume_role_policy = jsonencode({
@@ -34,3 +34,4 @@ resource "aws_iam_role_policy" "capstone-github-actions-policy" {
     ]
   })
 }
+*/
